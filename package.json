@@ -1,7 +1,7 @@
 {
-  "name": "daterange-kit",
+  "name": "oss-payees",
   "version": "0.1.0",
-  "description": "Parse and validate human date ranges (\"last 7 days\", \"2026-09-01..2026-09-26\", \"this month\") into typed { from, to } objects.",
+  "description": "Find where an open-source package wants to be paid (Drips FUNDING.json, tea.yaml, npm funding, GitHub FUNDING.yml), normalized and checked for conflicts, lookalikes and spoofed repos before anyone pays it.",
   "type": "module",
   "license": "MIT",
   "main": "dist/index.js",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zexoverz/daterange-kit.git"
+    "url": "git+https://github.com/zexoverz/oss-payees.git"
   },
   "dependencies": {
     "date-fns": "^4.4.0",
@@ -37,5 +37,19 @@
     "prettier": "^3.9.9",
     "typescript": "^7.0.2",
     "vitest": "^5.0.2"
-  }
+  },
+  "keywords": [
+    "funding",
+    "open-source",
+    "drips",
+    "tea",
+    "payout",
+    "web3",
+    "viem",
+    "security"
+  ],
+  "bin": {
+    "oss-payees": "dist/cli.js"
+  },
+  "homepage": "https://github.com/zexoverz/oss-payees"
 }
