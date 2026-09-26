@@ -8,10 +8,17 @@ written by a Claude Code session, and End Credits pays the open-source packages 
 
 ## Demo fixtures
 
-The dev dependencies `@endcredits-demo/moved-payout`, `@endcredits-demo/left-padder-pro` and
-`@endcredits-demo/unclaimed-utils` are End Credits demo fixtures, not real libraries. They exist so
-the demo can show a held payment (a payout address that changed), a refused payment (a sanctioned
-address) and a reserved payment (no wallet yet). No real package is ever shown as suspicious.
+The dev dependencies under `@endcredits-demo/*` are End Credits demo fixtures, not real libraries.
+They exist so one session can show every outcome End Credits handles, without ever showing a real
+package as suspicious:
+
+| Fixture | Shows |
+|---|---|
+| `moved-payout` | a payout address that changed: held until the owner signs |
+| `left-padder-pro` | a sanctioned address: refused by Intercepta |
+| `unclaimed-utils` | no wallet yet: reserved until the maintainer claims |
+| `tip-jar` | paid through the maintainer's own x402 endpoint |
+| `swapped-jar` | an endpoint that asks to be paid somewhere else: refused before signing |
 
 ## License
 
